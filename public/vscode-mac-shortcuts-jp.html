@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSCode Mac ショートカット一覧</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #007acc;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #007acc;
+            padding-bottom: 10px;
+        }
+        
+        .category {
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .category h2 {
+            background: linear-gradient(135deg, #007acc, #005a9e);
+            color: white;
+            margin: 0;
+            padding: 15px 20px;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+        
+        th, td {
+            padding: 12px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #495057;
+            font-size: 1.1em;
+        }
+        
+        tr:hover {
+            background-color: #f1f8ff;
+        }
+        
+        .shortcut {
+            font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+            background-color: #f1f3f4;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #d73a49;
+            white-space: nowrap;
+        }
+        
+        .description {
+            color: #586069;
+        }
+        
+        .usage {
+            font-size: 0.9em;
+            color: #6a737d;
+            font-style: italic;
+        }
+        
+        .key {
+            display: inline-block;
+            background: #e1e4e8;
+            border: 1px solid #d1d5da;
+            border-radius: 3px;
+            padding: 2px 6px;
+            margin: 0 2px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>VSCode Mac ショートカット一覧</h1>
+    
+    <div class="category">
+        <h2>基本操作</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ショートカット</th>
+                    <th>機能</th>
+                    <th>使用場面</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">S</span></span></td>
+                    <td>ファイル保存</td>
+                    <td class="usage">編集中のファイルを保存。こまめに保存する習慣をつけましょう</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Z</span></span></td>
+                    <td>元に戻す</td>
+                    <td class="usage">誤って削除した文字や変更を元に戻す</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Shift</span>+<span class="key">Z</span></span></td>
+                    <td>やり直し</td>
+                    <td class="usage">元に戻しすぎた場合にやり直し</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">C</span> / <span class="key">V</span> / <span class="key">X</span></span></td>
+                    <td>コピー/貼り付け/切り取り</td>
+                    <td class="usage">テキスト編集の基本操作</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="category">
+        <h2>ファイル・フォルダ操作</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ショートカット</th>
+                    <th>機能</th>
+                    <th>使用場面</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">P</span></span></td>
+                    <td>ファイルをすばやく開く</td>
+                    <td class="usage">ファイル名の一部を入力するだけで該当ファイルを素早く開く</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Shift</span>+<span class="key">P</span></span></td>
+                    <td>コマンドパレット</td>
+                    <td class="usage">「Format Document」「Toggle Word Wrap」など、あらゆる機能にアクセス</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">N</span></span></td>
+                    <td>新しいファイル</td>
+                    <td class="usage">新規ファイルを作成。保存時にファイル名と場所を指定</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">W</span></span></td>
+                    <td>現在のタブを閉じる</td>
+                    <td class="usage">作業が終わったファイルのタブを閉じてワークスペースを整理</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Option</span>+<span class="key">R</span></span></td>
+                    <td>ファイルをFinderで表示</td>
+                    <td class="usage">現在開いているファイルの場所をFinderで確認</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="category">
+        <h2>編集・移動</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ショートカット</th>
+                    <th>機能</th>
+                    <th>使用場面</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">D</span></span></td>
+                    <td>現在の単語を選択（複数選択可）</td>
+                    <td class="usage">変数名を一括変更する時。連続で押すと同じ単語を複数選択</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">L</span></span></td>
+                    <td>現在の行を選択</td>
+                    <td class="usage">行全体をコピーしたり削除したい時</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Option</span>+<span class="key">↑/↓</span></span></td>
+                    <td>行を上下に移動</td>
+                    <td class="usage">コードの順序を変更。切り取り・貼り付けせずに行を移動</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Shift</span>+<span class="key">Option</span>+<span class="key">↓/↑</span></span></td>
+                    <td>行を複製</td>
+                    <td class="usage">似たようなコードを書く時、既存の行をコピーして修正</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">/</span></span></td>
+                    <td>行コメントのオン/オフ</td>
+                    <td class="usage">デバッグ時にコードを一時的に無効化、説明を追加</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Shift</span>+<span class="key">K</span></span></td>
+                    <td>行を削除</td>
+                    <td class="usage">不要な行を素早く削除</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">→/←</span></span></td>
+                    <td>行の最初/最後に移動</td>
+                    <td class="usage">長い行で行頭・行末にすばやく移動</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Option</span>+<span class="key">→/←</span></span></td>
+                    <td>単語単位で移動</td>
+                    <td class="usage">単語の境界で効率的にカーソル移動</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="category">
+        <h2>検索・置換</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ショートカット</th>
+                    <th>機能</th>
+                    <th>使用場面</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">F</span></span></td>
+                    <td>ファイル内検索</td>
+                    <td class="usage">長いファイルで特定の関数や変数を見つける</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Option</span>+<span class="key">F</span></span></td>
+                    <td>置換</td>
+                    <td class="usage">変数名やテキストを一括で置き換える</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Shift</span>+<span class="key">F</span></span></td>
+                    <td>プロジェクト全体で検索</td>
+                    <td class="usage">複数ファイルにまたがって関数の使用箇所を調べる</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">G</span></span></td>
+                    <td>次の検索結果</td>
+                    <td class="usage">検索結果を順番に確認</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Shift</span>+<span class="key">G</span></span></td>
+                    <td>前の検索結果</td>
+                    <td class="usage">検索結果を逆順に確認</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="category">
+        <h2>表示・レイアウト</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ショートカット</th>
+                    <th>機能</th>
+                    <th>使用場面</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">B</span></span></td>
+                    <td>サイドバーの表示/非表示</td>
+                    <td class="usage">エディター領域を広く使いたい時にサイドバーを隠す</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">J</span></span></td>
+                    <td>パネル（ターミナルなど）の表示/非表示</td>
+                    <td class="usage">下部のパネルを表示・非表示切り替え</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Ctrl</span>+<span class="key">`</span></span></td>
+                    <td>ターミナルの表示/非表示</td>
+                    <td class="usage">コマンドライン操作が必要な時にVSCode内でターミナルを開く</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Shift</span>+<span class="key">E</span></span></td>
+                    <td>エクスプローラーにフォーカス</td>
+                    <td class="usage">ファイルツリーでファイル操作をする時</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Shift</span>+<span class="key">D</span></span></td>
+                    <td>デバッグビューを開く</td>
+                    <td class="usage">デバッグ機能を使用する時</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">\</span></span></td>
+                    <td>エディターを分割</td>
+                    <td class="usage">2つのファイルを同時に見ながら作業</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">K</span> <span class="key">Cmd</span>+<span class="key">S</span></span></td>
+                    <td>ショートカット一覧を表示</td>
+                    <td class="usage">ショートカットを確認・カスタマイズする時</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="category">
+        <h2>タブ・ウィンドウ操作</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ショートカット</th>
+                    <th>機能</th>
+                    <th>使用場面</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">1, 2, 3...</span></span></td>
+                    <td>タブの切り替え</td>
+                    <td class="usage">開いているファイル間を素早く移動</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">Option</span>+<span class="key">→/←</span></span></td>
+                    <td>タブの移動</td>
+                    <td class="usage">次/前のタブに順番に移動</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="category">
+        <h2>デバッグ・実行</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ショートカット</th>
+                    <th>機能</th>
+                    <th>使用場面</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="shortcut"><span class="key">F5</span></span></td>
+                    <td>デバッグ開始</td>
+                    <td class="usage">プログラムをデバッグモードで実行</td>
+                </tr>
+                <tr>
+                    <td><span class="shortcut"><span class="key">F9</span></span></td>
+                    <td>ブレークポイントの設定/解除</td>
+                    <td class="usage">デバッグ時にプログラムを停止させる箇所を指定</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="category">
+        <h2>実践的な使い方例</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>シーン</th>
+                    <th>ショートカットの組み合わせ</th>
+                    <th>詳細</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>新しいファイルで作業開始</td>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">N</span></span> → コード記述 → <span class="shortcut"><span class="key">Cmd</span>+<span class="key">S</span></span></td>
+                    <td class="usage">新規ファイル作成から保存まで</td>
+                </tr>
+                <tr>
+                    <td>既存コードの修正</td>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">P</span></span> → <span class="shortcut"><span class="key">Cmd</span>+<span class="key">F</span></span> → 修正 → <span class="shortcut"><span class="key">Cmd</span>+<span class="key">S</span></span></td>
+                    <td class="usage">ファイルを開いて検索・修正・保存</td>
+                </tr>
+                <tr>
+                    <td>デバッグ作業</td>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">/</span></span> → 動作確認 → 問題箇所特定</td>
+                    <td class="usage">怪しい行をコメントアウトして問題を特定</td>
+                </tr>
+                <tr>
+                    <td>リファクタリング</td>
+                    <td><span class="shortcut"><span class="key">Cmd</span>+<span class="key">D</span></span> → 連続押し → 一括変更</td>
+                    <td class="usage">変数名を選択して全ての同じ変数を一括変更</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
